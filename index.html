@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taganrog HeatMap</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div id="floating-panel">
+    <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+    <button onclick="changeGradient()">Change gradient</button>
+    <button onclick="changeRadius()">Change radius</button>
+    <button onclick="changeOpacity()">Change opacity</button>
+  </div>
+  <div id="map"></div>
+
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABJ-snRSMHe6LNJ01cQ-mJBzWwbwfXLYA&libraries=visualization&callback=initMap">
+      </script>
+  <script src="./main.js"></script>
+</body>
+</html>
